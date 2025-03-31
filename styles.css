@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav .nav-links li {
+    margin-right: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #28a745;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero .highlight {
+    color: #ff6347;
+}
+
+/* Newsletter Link */
+.newsletter {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.newsletter:hover {
+    color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+}
