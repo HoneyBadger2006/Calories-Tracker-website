@@ -20,7 +20,7 @@ class LoginForm {
         };
 
         try {
-            const response = await fetch('http://localhost:5000/api/users/login', {
+            const response = await fetch('https://sage-cupcake-acac72.netlify.app/api/users/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -43,6 +43,7 @@ class LoginForm {
             }
         } catch (error) {
             this.showMessage('An error occurred during login.', 'error');
+            console.error('Login error:', error);
         }
     }
 

@@ -1,0 +1,16 @@
+{
+  "name": "calories-tracker",
+  "version": "1.0.0",
+  "description": "A web application for tracking calories and fitness goals",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r *.html *.css *.js frontend/* dist/",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0"
+  }
+} 
